@@ -68,13 +68,11 @@ const transactions = [
   { id: 54321, amount: 1200 },
 ]
 const amount = prop('amount')
-const idGreaterThan50000 = pipe(
-  prop('id'),
-  lt('50000'),
-)
+const idGreaterThan50000 = propSatisfies(lt(50000), 'id')
 const sumAmounts = pipe(
   filter(idGreaterThan50000),
-  reduce((acc, transaction) => acc + amount(transaction), 0),
+  map(amount),
+  sum,
 )
 
 sumAmounts(transactions)
