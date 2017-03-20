@@ -1,0 +1,24 @@
+{
+  "name": "ramda-challenge",
+  "version": "1.0.0",
+  "description": "## Introdução",
+  "main": "ramda.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoWorms/ramda-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoWorms/ramda-challenge/issues"
+  },
+  "homepage": "https://github.com/MarcoWorms/ramda-challenge#readme",
+  "dependencies": {
+    "jest": "^19.0.2",
+    "ramda": "^0.23.0"
+  }
+}
