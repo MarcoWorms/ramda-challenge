@@ -52,7 +52,10 @@ const transactions = [
   { id: 2345678, amount: 3550 },
   { id: 54321, amount: 1200 },
 ]
-const find1337 = find(propEq('id', 1337))
+const find1337 = pipe(
+  find(propEq('id', 1337)),
+  amount
+)
 
 find1337(transactions)
 ```
